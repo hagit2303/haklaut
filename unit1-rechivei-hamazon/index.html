@@ -211,7 +211,7 @@ footer{color:var(--muted);font-size:.85rem;padding-block:24px;text-align:center}
 
 <div class="wrap">
   <div class="bar">
-    <a class="linkbtn" href="../index.html?v=202610182134" style="text-decoration:none">🏠 דף הבית</a>
+    <a class="linkbtn" href="../index.html?v=202610182150" style="text-decoration:none">🏠 דף הבית</a>
     <span class="brand">🐄 יחידה 1 · התזונאי של הרפת</span>
     <span class="chip milk" id="milk" title="ליטרים שצברתם">🥛 <span id="milkN">0</span> ליטר</span>
     <button class="linkbtn" id="openGloss" type="button">📖 מילון רפתן</button>
@@ -556,7 +556,7 @@ function renderMap(){
   b.onclick=()=>{S.cur=st.id;save();render();window.scrollTo({top:0,behavior:"smooth"});};
   m.appendChild(b);
  });
- const soon=h("a",{class:"stop",href:"../unit2-digestion/index.html?v=202610182134",title:"היחידה הבאה",style:"text-decoration:none"},`<span class="eartag"><span>2</span></span>➡️ יחידה 2: מערכת העיכול והכרס`);
+ const soon=h("a",{class:"stop",href:"../unit2-digestion/index.html?v=202610182150",title:"היחידה הבאה",style:"text-decoration:none"},`<span class="eartag"><span>2</span></span>➡️ יחידה 2: מערכת העיכול והכרס`);
  const allDone=STATIONS.every(s=>S.passed[s.id]);
  const r=h("button",{class:"stop"+(S.cur==="report"?" cur":""),type:"button"},`<span class="eartag"><span>✓</span></span>📋 דו״ח סיום`);
  if(!allDone){r.title="הדו״ח מציג את מה שעשיתם עד עכשיו";}
