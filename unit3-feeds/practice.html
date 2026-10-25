@@ -6,9 +6,9 @@
 <title>סוגי מזונות: תרגול</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Secular+One&family=Assistant:wght@400;600;700;800&display=swap">
-<link rel="stylesheet" href="../assets/farm.css?v=202610252141">
-<link rel="stylesheet" href="../assets/digest.css?v=202610252141">
-<link rel="stylesheet" href="../assets/lab-farm.css?v=202610252141">
+<link rel="stylesheet" href="../assets/farm.css?v=202610252153">
+<link rel="stylesheet" href="../assets/digest.css?v=202610252153">
+<link rel="stylesheet" href="../assets/lab-farm.css?v=202610252153">
 <style>.num{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.num input{width:7em;text-align:center;direction:ltr}</style>
 </head>
 <body>
@@ -18,7 +18,7 @@
   <header class="bar">
     <span class="brand">🌽 סוגי מזונות · תרגול</span>
     <span class="chip" data-fill="name" aria-label="שם התלמיד/ה"></span>
-    <a class="linkbtn" href="index.html?v=202610252141">→ לדף היחידה</a>
+    <a class="linkbtn" href="index.html?v=202610252153">→ לדף היחידה</a>
   </header>
   <nav class="cmap" id="cmap" aria-label="רצף היחידות"></nav>
 
@@ -61,9 +61,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="../assets/course.js?v=202610252141"></script>
-<script src="../assets/lab.js?v=202610252141"></script>
-<script src="../assets/pdf.js?v=202610252141"></script>
+<script src="../assets/course.js?v=202610252153"></script>
+<script src="../assets/lab.js?v=202610252153"></script>
+<script src="../assets/pdf.js?v=202610252153"></script>
 <script>
 renderCourse($('cmap'), 3, '../');
 
@@ -228,6 +228,16 @@ const B = [
       { n: 'ג', task: 'הסבירו מה תהיה ההשפעה של היעדר סידן במנת המזון של המטילה על ייצור הביצים.', pts: 3,
         rubric: [['ביצים עם קליפה דקה מאוד או שבורה', 50], ['הפסקת הטלה / תמותה', 50]],
         model: 'מטילה שלא תקבל די סידן תטיל ביצים עם קליפות דקות מאוד או שבורות, ועלולה להפסיק להטיל. במקרים קשים היא עלולה למות.' }
+    ] },
+  { src: 'בגרות 2017, שאלה 5ג ושאלה 6ג', title: 'אבני לקיקה וחלבון במעלי גירה',
+    stem: '<p>בעלי חיים במשק מקבלים מינרלים, בין השאר באבני לקיקה. מעלי גירה מקבלים לעיתים מנה דלה בחלבון.</p>',
+    parts: [
+      { n: 'א', task: 'הסבירו מה הן אבני לקיקה, וכתבו מדוע לכל מין של בעל חיים מתאים סוג אחר של אבני לקיקה.', pts: 4,
+        rubric: [['אבנים המכילות מינרלים, המוצבות במקום שבו בעלי החיים יכולים ללקק אותן', 50], ['כל מין זקוק לסוגים אחרים ולכמויות אחרות של מינרלים', 50]],
+        model: 'אבני לקיקה הן אבנים המכילות מינרלים, שמוצבות במקום שבו בעלי החיים יכולים ללקק אותן. לכל מין מתאים סוג אחר, כי כל מין זקוק לסוגים אחרים ולכמויות אחרות של מינרלים. למשל, כבשים רגישות לעודף נחושת, ולכן לא מתאים להן מזון שמיועד לבקר.' },
+      { n: 'ב', task: 'הסבירו מדוע מעלי גירה יכולים להסתפק בכמות חלבון מופחתת במנת המזון שלהם.', pts: 4,
+        rubric: [['בכרס יש חיידקים שבונים חלבון (גם מחנקן שאינו חלבון)', 50], ['מעלי הגירה מעכלים את החיידקים, והם מקור חלבון חלופי', 50]],
+        model: 'בכרס של מעלי הגירה חיים חיידקים, שבונים חלבון גם מחנקן שאינו חלבון. החיידקים עוברים עם המזון לקיבה האמיתית ולמעי, ושם מעלי הגירה מעכלים אותם. כך החיידקים משמשים מקור חלבון חלופי למנה שמכילה מעט חלבון.' }
     ] },
   { src: 'בגרות 2025, שאלה 14ב; בגרות 2021, שאלה 19א', title: 'אנרגיה ומינרלים',
     stem: '<p>המזון מספק לבעל החיים אנרגיה ורכיבים נוספים, כמו מינרלים.</p>',
