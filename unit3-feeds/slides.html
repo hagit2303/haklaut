@@ -465,31 +465,47 @@ html.print svg.wires .w1{display:none}
 .u17 .bag{top:880px;color:var(--teal);border-color:color-mix(in srgb,var(--teal) 50%,transparent)}
 
 /* 18. אנרגיה */
-.u18{--ga:var(--corn);--gb:var(--rumen);--gx:90%;--gy:10%}
-.u18 .bx{position:absolute;width:380px;padding:22px 20px;border-radius:22px;text-align:center;font-size:34px;font-weight:800;line-height:1.25;background:color-mix(in srgb,var(--c) 16%,#0e1d14);border:2px solid color-mix(in srgb,var(--c) 75%,transparent);box-shadow:0 0 40px -12px var(--c)}
-.u18 .e1{right:110px;top:200px;--c:var(--hay)}
-.u18 .e2{right:770px;top:200px;--c:var(--olive)}
-.u18 .e3{left:110px;top:200px;--c:var(--rumen);width:400px}
-.u18 .e4{left:110px;top:380px;--c:var(--corn)}
-.u18 .e5{left:110px;top:520px;--c:var(--acid)}
-.u18 .o1{right:110px;top:400px;--c:#9a7a5a}
-.u18 .o2{right:770px;top:400px;--c:#9a7a5a}
+.u18{--ga:var(--hay);--gb:var(--rumen);--gx:90%;--gy:6%}
 .u18 svg.ar{position:absolute;inset:0;width:1920px;height:1080px;pointer-events:none}
-.u18 svg.ar path{fill:none;stroke:var(--muted);stroke-width:4;marker-end:url(#ah18)}
-.u18 .defs{position:absolute;left:110px;right:110px;top:680px;display:grid;gap:10px}
-.u18 .defs p{font-size:31px;line-height:1.35}
-.u18 .defs b{color:var(--olive)}
-.u18 .bag{top:940px;font-size:28px}
+.u18 svg.ar path{fill:none;stroke:var(--muted);stroke-width:5;marker-end:url(#ah18)}
+.u18 svg.ar path.lo{stroke:var(--acid);stroke-dasharray:10 8;marker-end:url(#ah18l)}
+.u18 svg.ar path.nx{marker-end:none;stroke:var(--rumen)}
+.u18 .bx{position:absolute;top:190px;width:300px;height:160px;padding:16px 14px;border-radius:22px;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:8px;
+  background:color-mix(in srgb,var(--c) 10%,#fff);border:2px solid color-mix(in srgb,var(--c) 65%,transparent);color:var(--fg)}
+.u18 .bx b{font-size:31px;font-weight:800;line-height:1.15;color:var(--c)}
+.u18 .bx span{font-size:24px;font-weight:600;line-height:1.25;color:var(--muted)}
+.u18 .e1{right:70px;--c:var(--paper)}.u18 .e2{right:440px;--c:var(--hay)}.u18 .e3{right:810px;--c:var(--olive)}
+.u18 .e4{right:1180px;--c:var(--water)}.u18 .e5{right:1550px;--c:var(--rumen);border-width:3px;background:color-mix(in srgb,var(--rumen) 14%,#fff)}
+.u18 .nm,.u18 .np{top:600px;width:220px;height:150px;--c:var(--rumen)}
+.u18 .np{left:40px}.u18 .nm{left:290px}
+.u18 .ls{position:absolute;top:404px;width:280px;padding:12px 14px;border-radius:16px;text-align:center;font-size:23px;font-weight:600;line-height:1.3;color:var(--muted);
+  background:color-mix(in srgb,var(--acid) 6%,#fff);border:1.5px solid color-mix(in srgb,var(--acid) 35%,transparent)}
+.u18 .ls b{display:block;font-size:27px;font-weight:800;color:var(--acid);margin-bottom:4px}
+.u18 .l1{left:1008px}.u18 .l2{left:638px}.u18 .l3{left:268px}
+.u18 .aside{position:absolute;width:520px;padding:16px 22px;border-radius:16px;font-size:25px;line-height:1.35;background:#fff;border:1.5px solid color-mix(in srgb,var(--teal) 45%,transparent);border-right:6px solid var(--teal)}
+.u18 .a1{right:70px;top:404px}.u18 .a2{right:70px;top:580px}
+.u18 .ex{position:absolute;left:600px;right:70px;top:790px;padding:18px 24px;border-radius:18px;text-align:center;font-size:29px;line-height:1.35;background:color-mix(in srgb,var(--hay) 10%,#fff);border:1.5px solid color-mix(in srgb,var(--hay) 45%,transparent)}
+.u18 .ex b{color:var(--hay)}
+.u18 .bag{top:935px;left:600px;right:70px;font-size:28px}
 
-/* 19. מחלות תזונתיות */
+/* 19. מחלות תזונתיות: גורם וסימנים */
 .u19{--ga:var(--acid);--gb:var(--corn);--gx:50%;--gy:-10%}
-.u19 .gcard{width:540px;padding:24px 30px 26px}
+.u19 .gcard{width:540px;padding:22px 28px 24px}
 .u19 .gcard h3{font-size:36px}
-.u19 .gcard p{font-size:28px;margin-top:10px;line-height:1.35}
-.u19 .d1{right:100px;top:170px;--c:var(--acid)}.u19 .d2{right:690px;top:170px;--c:var(--water)}.u19 .d3{left:100px;top:170px;--c:var(--olive)}
-.u19 .d4{right:395px;top:520px;--c:var(--paper)}.u19 .d5{left:395px;top:520px;--c:var(--teal)}
-.u19 .punch{top:900px;--c:var(--rumen)}
-.u19 .punch span{font-size:36px}
+.u19 .gcard p{font-size:27px;margin-top:10px;line-height:1.35}
+.u19 .d1{right:100px;top:180px;--c:var(--acid)}.u19 .d2{right:690px;top:180px;--c:var(--water)}.u19 .d3{left:100px;top:180px;--c:var(--olive)}
+.u19 .d4{right:395px;top:590px;--c:var(--paper)}.u19 .d5{left:395px;top:590px;--c:var(--teal)}
+
+/* 19ב. טיפול ומניעה */
+.u22{--ga:var(--rumen);--gb:var(--acid);--gx:50%;--gy:-10%}
+.u22 .tm{position:absolute;left:90px;right:90px;top:175px;display:grid;gap:16px}
+.u22 .tm .h,.u22 .tm .r{display:grid;grid-template-columns:280px 1fr 600px;gap:30px;align-items:center}
+.u22 .tm .h{padding:0 30px;font-size:32px;font-weight:800;color:var(--muted)}
+.u22 .tm .r{padding:20px 30px;border-radius:18px;background:#fff;border:1px solid var(--line);border-right:7px solid var(--c);box-shadow:0 2px 8px rgba(31,42,30,.05)}
+.u22 .tm .r b{font-size:38px;font-weight:800;color:var(--c)}
+.u22 .tm .r span{font-size:31px;font-weight:600;line-height:1.35}
+.u22 .punch{top:950px;--c:var(--rumen)}
+.u22 .punch span{font-size:34px}
 
 /* 20. סיכום */
 .u20 .shade-all{background:rgba(6,14,9,.7)}
@@ -539,7 +555,6 @@ html.print svg.wires .w1{display:none}
 .u11 .tb span{background:#fff}
 .u11 .tb .h{background:#eef4e8}
 .u12 .chain span.c{color:var(--fg);background:color-mix(in srgb,var(--c) 10%,#fff)}
-.u18 .bx{background:color-mix(in srgb,var(--c) 10%,#fff);box-shadow:none;color:var(--fg)}
 .u20 .sum p{background:rgba(255,255,255,.92)}
 .u14 .bar .w{background:color-mix(in srgb,var(--water) 45%,#fff)}
 .u14 .cows p{background:#fff}
@@ -554,7 +569,6 @@ html.print svg.wires .w1{display:none}
 .u8 .q1{right:110px;top:180px}.u8 .q2{left:110px;top:180px}.u8 .q3{right:110px;top:510px}.u8 .q4{left:110px;top:510px}
 .u8 .punch{top:880px;--c:var(--corn)}.u8 .punch span{font-size:40px}
 .u1 .shade-all{background:rgba(243,246,239,.7)!important}
-.u18 .e4{width:460px}
 
 html,body{background:#e6eedd}
 
@@ -574,6 +588,14 @@ html,body{background:#e6eedd}
 .u21 .exp.in .bar2 i{width:var(--w)}
 .u21 .exp p{font-size:28px;line-height:1.35;margin-top:12px}
 .u21 .bag{top:900px}
+
+/* 18א. מושגי האנרגיה */
+.u23{--ga:var(--hay);--gb:var(--rumen);--gx:85%;--gy:6%}
+.u23 .dl{position:absolute;left:100px;right:100px;top:165px;display:grid;gap:14px}
+.u23 .dl .r{display:grid;grid-template-columns:440px 1fr;gap:30px;align-items:center;padding:18px 30px;border-radius:16px;background:#fff;border:1px solid var(--line);border-right:7px solid var(--c);box-shadow:0 2px 8px rgba(31,42,30,.05)}
+.u23 .dl .r b{font-size:38px;font-weight:800;color:var(--c)}
+.u23 .dl .r span{font-size:33px;font-weight:600;line-height:1.35}
+.u23 .nb{position:absolute;left:200px;right:200px;top:965px;text-align:center;font-size:30px;font-weight:700;color:var(--acid)}
 
 :root{--font-display:'Rubik';--font-body:'Rubik'}
 
@@ -732,11 +754,11 @@ html,body{background:#e6eedd}
 
 <section class="slide glow u11" data-title="תוספי מזון">
   <h2 class="t">תוספי מזון</h2>
-  <p class="intro">ניתנים בכמות קטנה, ואינם מקור עיקרי לאנרגיה.</p>
+  <p class="intro">ניתנים בכמות קטנה, ואינם מקור לאנרגיה.</p>
   <div class="tb">
     <span class="h">תוסף</span><span class="h">התרומה לבעל החיים</span>
     <span class="k b" data-g="1" style="--c:var(--water)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3 8 9l4 13 4-13-2.5-6"></path> <path d="M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z"></path> <path d="M2 9h20"></path></svg>מינרלים (גם באבני לקיקה)</span><span class="b" data-g="1">תפקוד תקין של מערכות הגוף, בניית שלד</span>
-    <span class="k b" data-g="2" style="--c:var(--hay)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle> <path d="M12 2v2"></path> <path d="M12 20v2"></path> <path d="m4.93 4.93 1.41 1.41"></path> <path d="m17.66 17.66 1.41 1.41"></path> <path d="M2 12h2"></path> <path d="M20 12h2"></path> <path d="m6.34 17.66-1.41 1.41"></path> <path d="m19.07 4.93-1.41 1.41"></path></svg>ויטמינים</span><span class="b" data-g="2">תהליכים מטבוליים: גדילה, הפקת אנרגיה מהמזון</span>
+    <span class="k b" data-g="2" style="--c:var(--hay)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle> <path d="M12 2v2"></path> <path d="M12 20v2"></path> <path d="m4.93 4.93 1.41 1.41"></path> <path d="m17.66 17.66 1.41 1.41"></path> <path d="M2 12h2"></path> <path d="M20 12h2"></path> <path d="m6.34 17.66-1.41 1.41"></path> <path d="m19.07 4.93-1.41 1.41"></path></svg>ויטמינים</span><span class="b" data-g="2">אינם מספקים אנרגיה. נדרשים בכמות זעירה לתהליכים מטבוליים ולגדילה</span>
     <span class="k b" data-g="3" style="--c:var(--corn)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 7h6v6"></path> <path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>זרזי גידול וחומרים אנטיביוטיים</span><span class="b" data-g="3">ניצול טוב יותר של המזון וגדילה מהירה יותר</span>
     <span class="k b" data-g="4" style="--c:var(--rumen)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3"></path> <path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4"></path> <path d="M5 21h14"></path></svg>פרוביוטיקה</span><span class="b" data-g="4">משפרת את תפקוד הכרס והמעיים ואת עיכול המזון</span>
     <span class="k b" data-g="5" style="--c:var(--olive)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 17h.01"></path> <path d="M11.496 2c.324-.016.558.292.529.615a4 4 0 004.235 4.368.713.713 0 01.758.757 4 4 0 004.366 4.237c.323-.03.63.204.614.527a10 10 0 01-2.915 6.566A1 1 0 114.93 4.918 10 10 0 0111.496 2"></path> <path d="M12 12h.01"></path> <path d="M16 16h.01"></path> <path d="M16 3h.01"></path> <path d="M21 4h.01"></path> <path d="M21 8h.01"></path> <path d="M7 14h.01"></path> <path d="M9 8h.01"></path></svg>חומרי טעם</span><span class="b" data-g="5">משפרים את טעם המזון ומגבירים את האכילה</span>
@@ -840,36 +862,69 @@ html,body{background:#e6eedd}
   <div class="notes"></div>
 </section>
 
-<section class="slide glow u18" data-title="אנרגיה">
-  <h2 class="t">לאן הולכת האנרגיה שבמזון?</h2>
-  <svg class="ar" viewBox="0 0 1920 1080" aria-hidden="true"><defs><marker id="ah18" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#bcc6b2"></path></marker></defs>
-    <path class="b" data-g="2" d="M1430 250 L1160 250"></path><path class="b" data-g="3" d="M770 250 L520 250"></path>
-    <path class="b" data-g="4" d="M310 300 L310 375"></path><path class="b" data-g="4" d="M220 300 Q160 420 220 515"></path>
-    <path class="b" data-g="2" d="M1620 300 L1620 395"></path><path class="b" data-g="3" d="M960 300 L960 395"></path></svg>
-  <div class="bx e1 b" data-g="1">אנרגיה נאכלת</div>
-  <div class="bx e2 b" data-g="2">אנרגיה נעכלת</div>
-  <div class="bx o1 b" data-g="2">בצואה</div>
-  <div class="bx e3 b" data-g="3">אנרגיה מטבולית (חליפה)</div>
-  <div class="bx o2 b" data-g="3">בשתן ובגזים (מתאן)</div>
-  <div class="bx e4 b" data-g="4">אנרגיה נטו: קיום וייצור</div>
-  <div class="bx e5 b" data-g="4">אנרגיה לחום</div>
-  <div class="defs">
-    <p class="b" data-g="5"><b>אנרגיה נעכלת:</b> האנרגיה במזון, פחות האנרגיה בצואה.</p>
-    <p class="b" data-g="5"><b>אנרגיה מטבולית:</b> האנרגיה הנעכלת, פחות האנרגיה בשתן ובגזים.</p>
-    <p class="b" data-g="6">האנרגיה בצואה ובשתן היא "אנרגיה בהפרשות": אנרגיה שהגוף לא ניצל</p>
+<section class="slide glow u23" data-title="מושגי האנרגיה">
+  <h2 class="t">מושגי האנרגיה במזון</h2>
+  <div class="dl">
+    <div class="r b" data-g="1" style="--c:var(--paper)"><b>אנרגיה כללית (GE)</b><span>האנרגיה הכימית הכוללת שבמזון, הנמדדת בשרפה מלאה במד קלוריות.</span></div>
+    <div class="r b" data-g="2" style="--c:var(--hay)"><b>אנרגיה נאכלת (IE)</b><span>כלל האנרגיה בכמות המזון שבעל החיים אכל בפועל.</span></div>
+    <div class="r b" data-g="3" style="--c:var(--olive)"><b>אנרגיה נעכלת (DE)</b><span>האנרגיה הנאכלת פחות האנרגיה היוצאת בצואה.</span></div>
+    <div class="r b" data-g="4" style="--c:var(--water)"><b>אנרגיה מטבולית (ME)</b><span>האנרגיה הנעכלת פחות האנרגיה בשתן ובגזי תסיסה (בעיקר מתאן). זו האנרגיה הזמינה לתהליכי חילוף החומרים.</span></div>
+    <div class="r b" data-g="5" style="--c:var(--acid)"><b>תוספת חום (HI)</b><span>חום הנוצר בעיכול, בתסיסה ובחילוף החומרים הקשור למזון.</span></div>
+    <div class="r b" data-g="6" style="--c:var(--rumen)"><b>אנרגיה נקייה (NE)</b><span>האנרגיה המטבולית פחות תוספת החום. משמשת לקיום (NEm) ולייצור.</span></div>
+    <div class="r b" data-g="7" style="--c:var(--teal)"><b>אנרגיה לייצור (NEp)</b><span>החלק שנותר אחרי כיסוי צורכי הקיום: חלב, גדילה ובניית רקמות, גדילת העובר.</span></div>
   </div>
-  <p class="bag b" data-g="7">בגרות 2025, שאלה 14: לזהות את סוגי האנרגיה בתרשים ולהסביר אותם.</p>
+  <p class="nb b" data-g="8">אנרגיה בצואה, אנרגיה בשתן ואנרגיה בגזי תסיסה הן שלושה הפסדים נפרדים בחישוב.</p>
+  <div class="notes"></div>
+</section>
+
+<section class="slide glow u18" data-title="אנרגיה">
+  <h2 class="t">נתיבי האנרגיה בבקר ובצאן</h2>
+  <svg class="ar" viewBox="0 0 1920 1080" aria-hidden="true"><defs>
+    <marker id="ah18" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#5b6a57"></path></marker>
+    <marker id="ah18l" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c0392b"></path></marker></defs>
+    <path class="b" data-g="1" d="M1548 270 L1488 270"></path>
+    <path class="b" data-g="2" d="M1178 270 L1118 270"></path><path class="b lo" data-g="2" d="M1148 272 L1148 398"></path>
+    <path class="b" data-g="3" d="M808 270 L748 270"></path><path class="b lo" data-g="3" d="M778 272 L778 398"></path>
+    <path class="b" data-g="4" d="M438 270 L378 270"></path><path class="b lo" data-g="4" d="M408 272 L408 398"></path>
+    <path class="b nx" data-g="5" d="M220 352 L220 560 M150 560 L400 560 M150 560 L150 598 M400 560 L400 598"></path></svg>
+  <div class="bx e1 b" data-g="1"><b>אנרגיה כללית (GE)</b><span>כלל האנרגיה הכימית שבמזון</span></div>
+  <div class="bx e2 b" data-g="1"><b>אנרגיה נאכלת (IE)</b><span>האנרגיה בכמות המזון שנאכלה בפועל</span></div>
+  <div class="bx e3 b" data-g="2"><b>אנרגיה נעכלת (DE)</b><span>נאכלת פחות האנרגיה בצואה</span></div>
+  <div class="bx e4 b" data-g="3"><b>אנרגיה מטבולית (ME)</b><span>נעכלת פחות האנרגיה בשתן ובגזי תסיסה</span></div>
+  <div class="bx e5 b" data-g="4"><b>אנרגיה נקייה (NE)</b><span>מטבולית פחות תוספת חום</span></div>
+  <div class="ls l1 b" data-g="2"><b>הפסד: צואה</b>מזון שלא נעכל</div>
+  <div class="ls l2 b" data-g="3"><b>הפסד: שתן וגזי תסיסה</b>בעיקר מתאן</div>
+  <div class="ls l3 b" data-g="4"><b>תוספת חום (HI)</b>חום מעיכול, מתסיסה ומחילוף חומרים הקשורים למזון</div>
+  <div class="bx nm b" data-g="5"><b>קיום (NEm)</b><span>נשימה, חום גוף ותנועה</span></div>
+  <div class="bx np b" data-g="5"><b>ייצור (NEp)</b><span>חלב, גדילה, עובר</span></div>
+  <p class="aside a1 b" data-g="6">נאכלת = ריכוז GE במזון × הכמות שנאכלה. ריכוז האנרגיה במזון אינו האנרגיה שנאכלה.</p>
+  <p class="aside a2 b" data-g="6">לא כל חום הגוף הוא תוספת חום. בקור, תוספת החום תורמת לשמירת חום הגוף.</p>
+  <p class="ex b" data-g="7"><b>דוגמה לימודית:</b> מתוך 100 יחידות נאכלות: 70 נעכלת, 60 מטבולית, 40 נקייה. מהן 25 לקיום ו-15 לייצור.</p>
+  <p class="bag b" data-g="8">בגרות 2025, שאלה 14: לזהות את סוגי האנרגיה בתרשים ולהסביר אותם.</p>
   <div class="notes"></div>
 </section>
 
 <section class="slide glow u19" data-title="מחלות תזונתיות">
-  <h2 class="t">מחלות תזונתיות</h2>
-  <div class="gcard d1 b" data-g="1"><div class="hd"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"></path> <path d="M6.453 15h11.094"></path> <path d="M8.5 2h7"></path></svg></span><h3>חמצת הכרס:</h3></div><p>עודף פחמימות מהירות תסיסה. חומצת חלב מצטברת, ה-pH יורד, והעיכול בכרס נפסק</p></div>
-  <div class="gcard d2 b" data-g="2"><div class="hd"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path> <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path> <path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path></svg></span><h3>נפחת:</h3></div><p>הפרה אינה משחררת את הגזים בגיהוק. בגלל מעט מזון גס, או קצף בכרס אחרי אכילת תלתן או אספסת צעירים</p></div>
-  <div class="gcard d3 b" data-g="3"><div class="hd"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12.5 17-.5-1-.5 1h1z"></path> <path d="M15 22a1 1 0 0 0 1-1v-1a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20v1a1 1 0 0 0 1 1z"></path> <circle cx="15" cy="12" r="1"></circle> <circle cx="9" cy="12" r="1"></circle></svg></span><h3>הרעלת אמוניה:</h3></div><p>עודף שתנן, או שתנן בלי תקופת הסתגלות. נוצרת אמוניה רבה, והיא נספגת לדם</p></div>
-  <div class="gcard d4 b" data-g="4"><div class="hd"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"></path></svg></span><h3>קדחת חלב:</h3></div><p>מיד אחרי ההמלטה הרבה סידן עובר לחלב, וריכוז הסידן בדם יורד. רעידות והתכווצויות שרירים, בלי חום גבוה</p></div>
-  <div class="gcard d5 b" data-g="5"><div class="hd"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path> <path d="M15 12h.01"></path> <path d="M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"></path> <path d="M9 12h.01"></path></svg></span><h3>רעלת היריון בצאן:</h3></div><p>בסוף ההיריון, כשהמנה דלה באנרגיה</p></div>
-  <div class="punch b" data-g="6"><span>מניעה: יחס נכון בין מזון גס למרוכז, מעבר הדרגתי בין מנות, ותוספי מינרלים.</span></div>
+  <h2 class="t">מחלות תזונתיות: גורם וסימנים</h2>
+  <div class="gcard d1 b" data-g="1"><div class="hd"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"></path> <path d="M6.453 15h11.094"></path> <path d="M8.5 2h7"></path></svg></span><h3>חמצת הכרס:</h3></div><p>עודף פחמימות מהירות תסיסה, או מעבר פתאומי אליהן. ה-pH בכרס יורד, ובחמצת חריפה מצטברת חומצת חלב. ירידה באכילה ובהעלאת גירה, שלשול</p></div>
+  <div class="gcard d2 b" data-g="2"><div class="hd"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"></path> <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"></path> <path d="M9.8 4.4A2 2 0 1 1 11 8H2"></path></svg></span><h3>נפחת:</h3></div><p>גזים שאינם משתחררים בגיהוק: גז חופשי, או קצף יציב אחרי אכילת קטניות צעירות. נפיחות בצד שמאל וקושי בנשימה</p></div>
+  <div class="gcard d3 b" data-g="3"><div class="hd"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12.5 17-.5-1-.5 1h1z"></path> <path d="M15 22a1 1 0 0 0 1-1v-1a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20v1a1 1 0 0 0 1 1z"></path> <circle cx="15" cy="12" r="1"></circle> <circle cx="9" cy="12" r="1"></circle></svg></span><h3>הרעלת אמוניה:</h3></div><p>עודף שתנן, או שתנן בלי תקופת הסתגלות. האמוניה נוצרת מהר יותר מקצב ניצולה בידי מיקרואורגניזמי הכרס, ונספגת לדם. רעד וקריסה</p></div>
+  <div class="gcard d4 b" data-g="4"><div class="hd"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"></path></svg></span><h3>קדחת חלב:</h3></div><p>סביב ההמלטה סידן רב עובר לקולוסטרום ולחלב, וריכוז הסידן בדם יורד. רעד, אחר כך חולשה ורביצה, לרוב בלי חום גבוה</p></div>
+  <div class="gcard d5 b" data-g="5"><div class="hd"><span class="tile"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path> <path d="M15 12h.01"></path> <path d="M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"></path> <path d="M9 12h.01"></path></svg></span><h3>רעלת היריון בצאן:</h3></div><p>בסוף ההיריון, בעיקר בריבוי עוברים, צריכת האנרגיה נמוכה מהדרישה. פירוק שומן והצטברות גופי קטון. חולשה וסימנים עצביים</p></div>
+  <div class="notes"></div>
+</section>
+
+<section class="slide glow u22" data-title="טיפול ומניעה">
+  <h2 class="t">מחלות תזונתיות: טיפול ומניעה</h2>
+  <div class="tm">
+    <div class="h"><span>מחלה</span><span>טיפול</span><span>מניעה</span></div>
+    <div class="r b" data-g="1" style="--c:var(--acid)"><b>חמצת הכרס</b><span>הפסקת המזון שגרם לבעיה ותיקון המנה. הווטרינר מתאים נוזלים ותיקון חומציות.</span><span>מעבר הדרגתי למזון מרוכז, די סיבים במנה.</span></div>
+    <div class="r b" data-g="2" style="--c:var(--water)"><b>נפחת</b><span>בקצף: תכשיר נוגד קצף. בגז חופשי: שחרור הגז בידי וטרינר.</span><span>מעבר הדרגתי, סיבים במנה, זהירות במרעה קטניות.</span></div>
+    <div class="r b" data-g="3" style="--c:var(--olive)"><b>הרעלת אמוניה</b><span>הפסקת מקור השתנן וטיפול וטרינרי דחוף, כולל החמצה מבוקרת של תוכן הכרס.</span><span>מינון מדויק, ערבוב אחיד ותקופת הסתגלות.</span></div>
+    <div class="r b" data-g="4" style="--c:var(--paper)"><b>קדחת חלב</b><span>עירוי סידן איטי לווריד בידי וטרינר.</span><span>מנת מעבר מאוזנת במינרלים לפני ההמלטה.</span></div>
+    <div class="r b" data-g="5" style="--c:var(--teal)"><b>רעלת היריון</b><span>מקור אנרגיה גלוקוגני (פרופילן גליקול). במצב חמור גלוקוז בעירוי.</span><span>מנה לפי שלב ההיריון ומספר העוברים.</span></div>
+  </div>
+  <div class="punch b" data-g="6"><span>בעל חיים חולה זקוק לאבחון ולטיפול וטרינרי.</span></div>
   <div class="notes"></div>
 </section>
 

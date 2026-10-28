@@ -6,8 +6,8 @@
 <title>מדעי החקלאות: דף הבית</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Secular+One&family=Assistant:wght@400;600;700;800&display=swap">
-<link rel="stylesheet" href="assets/farm.css?v=202610261354">
-<link rel="stylesheet" href="assets/digest.css?v=202610261354">
+<link rel="stylesheet" href="assets/farm.css?v=202610282144">
+<link rel="stylesheet" href="assets/digest.css?v=202610282144">
 <style>
 .units{display:grid;gap:14px}
 .unit{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow);transition:border-color .2s,transform .2s}
@@ -18,6 +18,8 @@ a.unit:hover{border-color:var(--accent);transform:translateY(-2px)}
 .unit p{margin:4px 0 0}
 .unit .go{font-weight:800;color:var(--accent);margin-top:6px;display:inline-block}
 .unit.soon{opacity:.55;box-shadow:none}
+.unit.exam{border:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 6%,var(--paper))}
+.unit.exam .eartag span{font-size:1.3rem}
 @media (prefers-reduced-motion:reduce){.unit{transition:none}a.unit:hover{transform:none}}
 </style>
 </head>
@@ -35,11 +37,14 @@ a.unit:hover{border-color:var(--accent);transform:translateY(-2px)}
 
   <footer>מדעי החקלאות · חגית ברגמן · הכפר הירוק · היחידות מתבססות על חומרי מט״ח ומורחבות בחומרים נוספים.</footer>
 </div>
-<script src="assets/course.js?v=202610261354"></script>
+<script src="assets/course.js?v=202610282144"></script>
 <script>
+// החומר לבחינה: מוצג אחרי שלוש היחידות הראשונות
+const EXAM = `<a class="unit exam" href="exam/rivon-a-topics.pdf" target="_blank" rel="noopener"><span class="eartag"><span>📝</span></span><div><span class="label">החומר לבחינה</span><h2>לקראת מבחן רבעון א</h2><p>נושאי הבחינה לפי תוכנית הלימודים: מבוא, החקלאות כספק מזון, הזנה ומערכת העיכול, תהליך המחקר המדעי, ותזונת בקר וצאן.</p><span class="go">פתיחת הדף ←</span></div></a>`;
 document.getElementById('units').innerHTML = COURSE.map(u => {
   const inner = `<span class="eartag"><span>${u.n}</span></span><div><span class="label">יחידה ${u.n}${u.url ? '' : ' · בקרוב'}</span><h2>${u.icon} ${u.t}</h2><p>${u.d}</p>${u.url ? '<span class="go">כניסה ליחידה ←</span>' : ''}</div>`;
-  return u.url ? `<a class="unit" href="${u.url}">${inner}</a>` : `<div class="unit soon">${inner}</div>`;
+  const card = u.url ? `<a class="unit" href="${u.url}">${inner}</a>` : `<div class="unit soon">${inner}</div>`;
+  return u.n === 3 ? card + EXAM : card;
 }).join('');
 </script>
 </body>
