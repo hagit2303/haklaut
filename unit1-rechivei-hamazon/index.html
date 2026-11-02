@@ -212,12 +212,17 @@ footer{color:var(--muted);font-size:.85rem;padding-block:24px;text-align:center}
 
 <div class="wrap">
   <div class="bar">
-    <a class="linkbtn" href="../index.html?v=202610290610" style="text-decoration:none">🏠 דף הבית</a>
-    <span class="brand">🐄 יחידה 1 · התזונאי של הרפת</span>
+    <a class="linkbtn" href="../index.html?v=202611021845" style="text-decoration:none">🏠 דף הבית</a>
+    <span class="brand">🐄 יחידה 2 · התזונאי של הרפת</span>
     <span class="chip milk" id="milk" title="ליטרים שצברתם">🥛 <span id="milkN">0</span> ליטר</span>
     <button class="linkbtn" id="openGloss" type="button">📖 מילון רפתן</button>
   </div>
   <section id="cur" style="margin:12px 0"></section>
+  <section class="card" style="margin:12px 0;display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+    <span style="font-size:2rem" aria-hidden="true">🥗</span>
+    <div style="flex:1;min-width:220px"><b style="color:var(--accent);font-size:1.15rem">מצגת: אבות המזון</b><br><span style="color:var(--muted)">פחמימות, חלבונים, שומנים, ויטמינים, מינרלים ומים, ומה מקבלת פרה ברפת.</span></div>
+    <a class="linkbtn" href="avot-hamazon.html?v=202611021845" style="text-decoration:none">לפתיחת המצגת ←</a>
+  </section>
   <section class="card" style="margin:12px 0;display:flex;gap:14px;align-items:center;flex-wrap:wrap">
     <span style="font-size:2rem" aria-hidden="true">📽️</span>
     <div style="flex:1;min-width:220px"><b style="color:var(--accent);font-size:1.15rem">מצגת: החקלאות כספק מזון</b><br><span style="color:var(--muted)">אבות המזון, מזון מן החי ומן הצומח, חלבון מלא, בשר, חלב, ביצה ודבש. נפתחת מהקלאסרום.</span></div>
@@ -563,7 +568,7 @@ function renderMap(){
   b.onclick=()=>{S.cur=st.id;save();render();window.scrollTo({top:0,behavior:"smooth"});};
   m.appendChild(b);
  });
- const soon=h("a",{class:"stop",href:"../unit2-digestion/index.html?v=202610290610",title:"היחידה הבאה",style:"text-decoration:none"},`<span class="eartag"><span>2</span></span>➡️ יחידה 2: מערכת העיכול והכרס`);
+ const soon=h("a",{class:"stop",href:"../unit2-digestion/index.html?v=202611021845",title:"היחידה הבאה",style:"text-decoration:none"},`<span class="eartag"><span>3</span></span>➡️ יחידה 3: מערכת העיכול והכרס`);
  const allDone=STATIONS.every(s=>S.passed[s.id]);
  const r=h("button",{class:"stop"+(S.cur==="report"?" cur":""),type:"button"},`<span class="eartag"><span>✓</span></span>📋 דו״ח סיום`);
  if(!allDone){r.title="הדו״ח מציג את מה שעשיתם עד עכשיו";}
@@ -957,6 +962,6 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")$("#gloss").hidden=t
 
 render();
 </script>
-<script src="../assets/curriculum.js?v=202610290610"></script>
-<script>renderCurriculum(document.getElementById('cur'), 1)</script>
+<script src="../assets/curriculum.js?v=202611021845"></script>
+<script>renderCurriculum(document.getElementById('cur'), 2)</script>
 </body></html>
