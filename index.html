@@ -41,11 +41,12 @@ a.unit:hover{border-color:var(--accent);transform:translateY(-2px)}
 <script>
 // החומר לבחינה: מוצג בסוף, אחרי כל היחידות
 const EXAM = `<a class="unit exam" href="exam/rivon-a-topics.pdf" target="_blank" rel="noopener"><span class="eartag"><span>📝</span></span><div><span class="label">החומר לבחינה</span><h2>לקראת מבחן רבעון א</h2><p>נושאי הבחינה לפי תוכנית הלימודים: מבוא, החקלאות כספק מזון, הזנה ומערכת העיכול, תהליך המחקר המדעי, ותזונת בקר וצאן.</p><span class="go">פתיחת הדף ←</span></div></a>`;
+const SUMMARY = `<a class="unit exam" href="summary/sikum-hazana.pdf" target="_blank" rel="noopener"><span class="eartag"><span>📘</span></span><div><span class="label">סיכום לקראת מבחן</span><h2>סיכום: הרכב המזון, מערכת העיכול וסוגי מזונות</h2><p>כל החומר במקום אחד, עם תרשימים, צילומים ושאלות לבדיקה עצמית. אפשר גם <span style="text-decoration:underline" onclick="event.preventDefault();event.stopPropagation();location.href='summary/sikum-hazana.docx'">להוריד כקובץ וורד</span>.</p><span class="go">פתיחת הסיכום (PDF) ←</span></div></a>`;
 document.getElementById('units').innerHTML = COURSE.map(u => {
   const inner = `<span class="eartag"><span>${u.n}</span></span><div><span class="label">${u.label || 'יחידה ' + u.n}${u.url ? '' : ' · בקרוב'}</span><h2>${u.icon} ${u.t}</h2><p>${u.d}</p>${u.url ? '<span class="go">כניסה ליחידה ←</span>' : ''}</div>`;
   const card = u.url ? `<a class="unit" href="${u.url}">${inner}</a>` : `<div class="unit soon">${inner}</div>`;
   return card;
-}).join('') + EXAM;
+}).join('') + EXAM + SUMMARY;
 </script>
 </body>
 </html>
